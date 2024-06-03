@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-17T19:46:21.845350" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Demoblaze_Robot\TestCases">
+<suite id="s1-s1" name="LoginPageTest" source="C:\Demoblaze_Robot\TestCases\LoginPageTest.robot">
+<test id="s1-s1-t1" name="Fill the login form" line="14">
+<kw name="open the browser" owner="GenericPage" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:22.236211" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-17T19:46:22.236211" elapsed="3.992063"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:26.228274" level="INFO">Opening url 'https://www.demoblaze.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-17T19:46:26.228274" elapsed="0.854782"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-17T19:46:27.084201" elapsed="2.059117"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-17T19:46:29.144826" elapsed="0.016481"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:22.234199" elapsed="6.927108"/>
+</kw>
+<kw name="Validate the unsuccessful login">
+<msg time="2024-05-17T19:46:29.161307" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-17T19:46:29.161307" elapsed="0.000000">Variable '${username}' not found.</status>
+</kw>
+<kw name="close browser session" owner="GenericPage" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-17T19:46:29.161307" elapsed="2.992548"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:29.161307" elapsed="2.992548"/>
+</kw>
+<status status="FAIL" start="2024-05-17T19:46:22.234199" elapsed="9.919656">Variable '${username}' not found.</status>
+</test>
+<doc>To validate the login</doc>
+<status status="FAIL" start="2024-05-17T19:46:21.916437" elapsed="10.237418"/>
+</suite>
+<status status="FAIL" start="2024-05-17T19:46:21.864077" elapsed="10.293786"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="LoginPageTest">TestCases.LoginPageTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\LoginPageTest.robot", line 0</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">In source file:
+  File "../TestData/LoginData.csv", line 3</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: IndexError: list index out of range</msg>
+</errors>
+</robot>

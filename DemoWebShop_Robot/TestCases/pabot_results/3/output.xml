@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-17T19:46:21.869082" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Demoblaze_Robot\TestCases">
+<suite id="s1-s1" name="ProductsAdd" source="C:\Demoblaze_Robot\TestCases\ProductsAdd.robot">
+<test id="s1-s1-t1" name="validate the products" line="12">
+<status status="FAIL" start="2024-05-17T19:46:22.236211" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<doc>To validate the login</doc>
+<status status="FAIL" start="2024-05-17T19:46:21.900930" elapsed="0.335281"/>
+</suite>
+<status status="FAIL" start="2024-05-17T19:46:21.884617" elapsed="0.351594"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="ProductsAdd">TestCases.ProductsAdd</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\ProductsAdd.robot", line 0</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">In source file:
+  File "../TestDatas/LoginData.csv", line 0</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Demoblaze_Robot\TestCases\..\TestDatas\LoginData.csv but file does not exist.</msg>
+</errors>
+</robot>

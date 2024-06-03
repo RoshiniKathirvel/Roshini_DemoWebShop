@@ -1,0 +1,26 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.LoginPageTest :: To validate the login                              
+==============================================================================
+Fill the login form                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Demoblaze_Robot\TestCases\LoginPageTest.robot:14
+    T:  Fill the login form    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Demoblaze_Robot\TestCases\LoginPageTest.robot:14
+      Validate the unsuccessful login    ${username}    ${password}
+      |  ${username} = <Unable to define variable value>
+      |  ${password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username}' not found.
+------------------------------------------------------------------------------
+TestCases.LoginPageTest :: To validate the login                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Demoblaze_Robot\TestCases\pabot_results\0\output.xml

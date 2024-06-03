@@ -1,0 +1,5 @@
+[ ERROR ] [ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\ProductAdd.robot", line 0
+[ ERROR ] In source file:
+  File "../TestDatas/LoginData.csv", line 0
+[ ERROR ] Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Demoblaze_Robot\TestCases\..\TestDatas\LoginData.csv but file does not exist.

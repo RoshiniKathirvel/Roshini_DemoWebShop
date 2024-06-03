@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0 (Python 3.12.2 on win32)" generated="2024-05-17T19:46:36.654488" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Demoblaze_Robot\TestCases">
+<suite id="s1-s1" name="LoginPageTest" source="C:\Demoblaze_Robot\TestCases\LoginPageTest.robot">
+<test id="s1-s1-t1" name="Fill the login form" line="14">
+<kw name="open the browser" owner="GenericPage" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:22.236211" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-17T19:46:22.236211" elapsed="3.992063"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:26.228274" level="INFO">Opening url 'https://www.demoblaze.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-17T19:46:26.228274" elapsed="0.854782"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-17T19:46:27.084201" elapsed="2.059117"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-17T19:46:29.144826" elapsed="0.016481"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:22.234199" elapsed="6.927108"/>
+</kw>
+<kw name="Validate the unsuccessful login">
+<msg time="2024-05-17T19:46:29.161307" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-17T19:46:29.161307" elapsed="0.000000">Variable '${username}' not found.</status>
+</kw>
+<kw name="close browser session" owner="GenericPage" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-17T19:46:29.161307" elapsed="2.992548"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:29.161307" elapsed="2.992548"/>
+</kw>
+<status status="FAIL" start="2024-05-17T19:46:22.234199" elapsed="9.919656">Variable '${username}' not found.</status>
+</test>
+<doc>To validate the login</doc>
+<status status="FAIL" start="2024-05-17T19:46:21.916000" elapsed="10.237418"/>
+</suite>
+<suite id="s1-s2" name="LoginSuccessTest" source="C:\Demoblaze_Robot\TestCases\LoginSuccessTest.robot">
+<test id="s1-s2-t1" name="validates the successful msg" line="12">
+<kw name="open the browser" owner="GenericPage" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:22.222195" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-17T19:46:22.222195" elapsed="3.921307"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:26.143502" level="INFO">Opening url 'https://www.demoblaze.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-17T19:46:26.143502" elapsed="2.430696"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-17T19:46:28.579396" elapsed="0.149099"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-17T19:46:28.728495" elapsed="0.077124"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:22.222195" elapsed="6.583424"/>
+</kw>
+<kw name="validate the successful login">
+<msg time="2024-05-17T19:46:28.808130" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-17T19:46:28.805619" elapsed="0.002511">Variable '${username}' not found.</status>
+</kw>
+<kw name="close browser session" owner="GenericPage" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-17T19:46:28.811140" elapsed="3.247869"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:28.811140" elapsed="3.247869"/>
+</kw>
+<status status="FAIL" start="2024-05-17T19:46:22.222195" elapsed="9.836814">Variable '${username}' not found.</status>
+</test>
+<status status="FAIL" start="2024-05-17T19:46:21.947246" elapsed="10.111763"/>
+</suite>
+<suite id="s1-s3" name="ProductAdd" source="C:\Demoblaze_Robot\TestCases\ProductAdd.robot">
+<test id="s1-s3-t1" name="Verify the values" line="13">
+<kw name="open the browser" owner="GenericPage" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:22.236211" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-17T19:46:22.236211" elapsed="4.017765"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-17T19:46:26.254885" level="INFO">Opening url 'https://www.demoblaze.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-17T19:46:26.253976" elapsed="2.305719"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-17T19:46:28.559695" elapsed="0.501613"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-17T19:46:29.061308" elapsed="0.008496"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:22.236211" elapsed="6.833593"/>
+</kw>
+<kw name="Add the product to the cart">
+<msg time="2024-05-17T19:46:29.078885" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<status status="FAIL" start="2024-05-17T19:46:29.069804" elapsed="0.009783">Variable '${username}' not found.</status>
+</kw>
+<kw name="close browser session" owner="GenericPage" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-17T19:46:29.081226" elapsed="3.057547"/>
+</kw>
+<status status="PASS" start="2024-05-17T19:46:29.080409" elapsed="3.058364"/>
+</kw>
+<status status="FAIL" start="2024-05-17T19:46:22.236211" elapsed="9.902562">Variable '${username}' not found.</status>
+</test>
+<doc>To validate the login</doc>
+<status status="FAIL" start="2024-05-17T19:46:21.869082" elapsed="10.269691"/>
+</suite>
+<suite id="s1-s4" name="ProductsAdd" source="C:\Demoblaze_Robot\TestCases\ProductsAdd.robot">
+<test id="s1-s4-t1" name="validate the products" line="12">
+<status status="FAIL" start="2024-05-17T19:46:22.236211" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<doc>To validate the login</doc>
+<status status="FAIL" start="2024-05-17T19:46:21.900930" elapsed="0.335281"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="FAIL" start="2024-05-17T19:46:21.845000" elapsed="10.293786"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="LoginPageTest">TestCases.LoginPageTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="LoginSuccessTest">TestCases.LoginSuccessTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="ProductAdd">TestCases.ProductAdd</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="ProductsAdd">TestCases.ProductsAdd</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\LoginPageTest.robot", line 0</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">In source file:
+  File "../TestData/LoginData.csv", line 3</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: IndexError: list index out of range</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\LoginSuccessTest.robot", line 0</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">In source file:
+  File "../TestDatas/LoginData.csv", line 0</msg>
+<msg time="2024-05-17T19:46:22.222195" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Demoblaze_Robot\TestCases\..\TestDatas\LoginData.csv but file does not exist.</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\ProductAdd.robot", line 0</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">In source file:
+  File "../TestDatas/LoginData.csv", line 0</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Demoblaze_Robot\TestCases\..\TestDatas\LoginData.csv but file does not exist.</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Demoblaze_Robot\TestCases\ProductsAdd.robot", line 0</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">In source file:
+  File "../TestDatas/LoginData.csv", line 0</msg>
+<msg time="2024-05-17T19:46:22.236211" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Demoblaze_Robot\TestCases\..\TestDatas\LoginData.csv but file does not exist.</msg>
+</errors>
+</robot>

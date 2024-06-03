@@ -1,0 +1,8 @@
+datasources:b96d41ff4cfc438b78f4b7ef1d88fc0f043729a3
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:9a9cb332224b34caa2c6ff2a9f56caa175aee929
+--suite TestCases.LoginPageTest
+--suite TestCases.LoginSuccessTest
+--suite TestCases.ProductAdd
+--suite TestCases.ProductsAdd
