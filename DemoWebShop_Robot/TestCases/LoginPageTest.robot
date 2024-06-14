@@ -29,3 +29,4 @@ Fill the login forms
 
 Verify the alert message
     LoginResources.verify the unsuccess message
+#Updated with the login page
