@@ -17,4 +17,4 @@ Verify the values     ${username}
 Add the product to the cart
     ProductResources.verify the add to cart
     ProductResources.verify the alert message
-    
+  #new products
